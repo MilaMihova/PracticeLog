@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice Log</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/css/icons.css"/>
+
+    <!-- JS -->
+    <script src="scripts/js/index.js"></script>
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="scripts/js/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="images/TimerLogo.svg">Practice Log
+            </a>
+            <a href="#">Timer</a>
+            <a href="#">Report</a>
+            <a href="#">Insight</a>
+            <a class="navbar-account" href="#">Alicia Aggarwal</a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="stopwatch">
+                <div id="timer" class="timer">
+                    <span id="timerHour" class="timerWindow">01</span>
+                    <span>:</span>
+                    <span id="timerMinutes" class="timerWindow">30</span>
+                    <span>:</span>
+                    <span id="timerSeconds" class="timerWindow">35</span>
+                </div>
+                <div>
+                    <button id="startButton" class="mainButton fa fa-play"></button>
+                </div>
+                <div class="buttonsContainer">
+                    <button id="pauseButton" class="secondaryButton fa fa-pause"></button>
+                    <button id="cancelButton" class="secondaryButton fa fa-cancel"></button> 
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="chart_div"></div>
+        </section>
+        </main>
+<footer>
+    <nav>
+        <div class="navbar">Copyright &copy; Mila Mihova</div>
+    </nav>
+</footer>
+</body>
+</html>
