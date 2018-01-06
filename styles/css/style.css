@@ -1,0 +1,114 @@
+body {
+  background-color: #dcdce6;
+  margin: 0; }
+
+nav {
+  background-color: #0284a8;
+  border-bottom: 8px solid #fcd8c0;
+  color: #e1f7e7;
+  padding: 4px; }
+
+.navbar {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 16pt; }
+  .navbar a {
+    text-decoration: none;
+    color: #a7e0e8;
+    padding-right: 20px; }
+
+.navbar-brand {
+  font-size: 24pt;
+  color: #e1f7e7 !important; }
+  .navbar-brand img {
+    width: 1em;
+    height: 1em;
+    vertical-align: top;
+    margin: 3px 10px; }
+
+.navbar-account {
+  flex: 2;
+  text-align: right; }
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; }
+
+section {
+  margin: 20px 10px;
+  background-color: white;
+  border: 1px solid #bdccd4;
+  border-radius: 10px;
+  flex: 1; }
+
+.stopwatch {
+  min-width: 40vw;
+  max-width: 90%; }
+  .stopwatch > div {
+    margin: 40px auto; }
+  .stopwatch button {
+    margin: auto;
+    border-radius: 50%;
+    border: double;
+    box-shadow: 0 0 5px 1px #dfffff;
+    text-shadow: 0 0 2px #bdccd4;
+    color: #f2f2f2; }
+    .stopwatch button:hover {
+      color: #dfffff;
+      text-shadow: 0 0 2px #bdccd4, 0 0 2px #dfffff; }
+  .stopwatch .mainButton {
+    background-color: #a7e0e8;
+    width: 200px;
+    height: 200px;
+    font-size: 48pt;
+    display: block; }
+  .stopwatch .buttonsContainer {
+    display: flex;
+    justify-content: space-around; }
+  .stopwatch .secondaryButton {
+    background-color: #02547d;
+    color: #f2f2f2;
+    width: 120px;
+    height: 120px;
+    font-size: 36pt; }
+  .stopwatch .timer {
+    color: #02547d;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 60pt;
+    text-align: center; }
+    .stopwatch .timer .timerWindow {
+      border: 1px double #bdccd4;
+      display: inline-block;
+      width: 120px; }
+
+footer {
+  background-color: #0284a8; }
+  footer nav {
+    border-top: 2px solid #fcd8c0;
+    border-bottom: 0; }
+  footer .navbar {
+    font-size: 12pt; }
+
+@keyframes slideDownLeft {
+  from {
+    top: 0px;
+    left: 100px; }
+  to {
+    top: 100px;
+    left: 0px; } }
+@keyframes slideDownRight {
+  from {
+    top: 0px;
+    left: 100px; }
+  to {
+    top: 100px;
+    left: 200px; } }
+
+/*# sourceMappingURL=style.css.map */

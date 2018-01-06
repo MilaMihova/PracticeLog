@@ -1,0 +1,152 @@
+// colors
+$navBackground: rgb(2, 132, 168);
+$navColor:  rgb(225, 247, 231);
+$bgColor: rgb(220, 220, 230);
+$borderColor:  rgb(189, 204, 212);
+$accentColor: rgb(252, 216, 192);
+$mainButton: rgb(167, 224, 232);
+$secondaryButton: rgb(2, 84, 125);
+$activeButton: rgb(223, 255, 255);
+$inactiveButton: rgb(242, 242, 242);
+
+// fonts
+$mainFont: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$timerFont: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+body {
+    background-color: $bgColor;
+    margin: 0;
+}
+
+nav {
+    background-color: $navBackground;
+    border-bottom: 8px solid $accentColor;
+    color: $navColor;
+    padding: 4px;
+}
+
+.navbar {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    font-family: $mainFont;
+    font-size: 16pt;
+
+    a {
+        text-decoration: none;
+        color: $mainButton;
+        padding-right: 20px;
+    }
+}
+
+.navbar-brand {
+    font-size: 24pt;
+    color: $navColor !important;
+
+    img {
+        width: 1em;
+        height: 1em;
+        vertical-align: top;
+        margin: 3px 10px;
+    }
+}
+
+.navbar-account {
+    flex: 2;
+    text-align: right;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+section {
+    margin: 20px 10px;
+    background-color: white;
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.stopwatch {
+    min-width: 40vw;
+    max-width: 90%;
+
+    > div {
+        margin: 40px auto;;
+    }
+
+    button {
+        margin: auto;
+        border-radius: 50%;
+        border: double;
+        box-shadow: 0 0 5px 1px $activeButton;
+        text-shadow: 0 0 2px $borderColor;
+        color: $inactiveButton;
+        &:hover {
+            color: $activeButton;
+            text-shadow: 0 0 2px $borderColor, 0 0 2px $activeButton;
+        }
+    }
+
+    .mainButton {
+        background-color: $mainButton;
+        width: 200px;
+        height: 200px;
+        font-size: 48pt;
+        display: block;
+    }
+
+    .buttonsContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .secondaryButton {
+        background-color: $secondaryButton;
+        color: $inactiveButton;
+        width: 120px;
+        height: 120px;
+        font-size: 36pt;
+    }
+
+    .timer {
+        color: $secondaryButton;
+        font-family: $timerFont;
+        font-size: 60pt;
+        text-align: center;
+        
+        .timerWindow {
+            border: 1px double $borderColor;
+            display: inline-block;
+            width: 120px;
+        }
+    }
+}
+
+footer {
+    background-color: $navBackground;
+    nav {
+        border-top: 2px solid $accentColor;
+        border-bottom: 0;
+    }
+    .navbar {
+        font-size: 12pt;
+    }
+}
+
+@keyframes slideDownLeft {
+    from { top: 0px; left: 100px; }
+    to { top: 100px; left: 0px }
+}
+
+@keyframes slideDownRight {
+    from { top: 0px; left: 100px; }
+    to { top: 100px; left: 200px }
+}
